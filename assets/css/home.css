@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+#main-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+#heading-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+#heading{
+    /* width: 70%; */
+}
+
+#heading-container i{
+    /* width: 20%; */
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+#contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(3, 102, 214, 0.3);
+    color: white;
+    margin-bottom: 3px;
+    /* border-radius: 5px; */
+}
+
+.contact:hover{
+    background-color: gray;
+}
+
+.delete-container{
+    width: 50%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-container a{
+    margin-right: 5px;
+}
+
+.delete-container i{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-container i:hover{
+    color: red;
+}
+
+#name{
+    margin-left: 5px;
+}
+/* #phone{
+    margin-right: 5px;
+} */
+
+#add-contact-container{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+}
+
+form input{
+    padding: 2px 4px;
+    font-size: 1rem;
+    width: 35%;
+    outline-color:skyblue;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+
+form input:hover{
+    border-width: 0;
+    /* outline: 2px solid skyblue; */
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+form button{
+    width: 15%;
+    height: 1.8rem;
+    background-color: gray;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media only screen and (min-width: 950px) {
+    #main-container{
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    #heading{
+        font-size: 2rem;
+    }
+}
