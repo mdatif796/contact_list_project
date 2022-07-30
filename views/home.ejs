@@ -26,7 +26,7 @@
                     <p id="name"> <%= contact.name  %>  </p>
                     <div class="delete-container">
                         <p id="phone"> <%= contact.phone  %>  </p>
-                        <a href="/delete-contact/?phone=<%= contact.phone  %> "><i class="fa-solid fa-trash"></i></a>
+                        <a href="/delete-contact/?contactId=<%= contact._id  %> "><i class="fa-solid fa-trash"></i></a>
                     </div>
                 </div>    
             <%} %> 
