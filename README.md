@@ -1,7 +1,14 @@
-# contact_list_project
+# MY CONTACT LIST
  * This is a simple contact list project where user can add a contact, delete a contact and view a contact.
  * **CRUD** functionality enables in this project.
  * This project is also connected with the **Database** , so that user never lost their data.
+ 
+# Technologies used in this project ....
+* [EXPRESSJS](https://expressjs.com/).
+* [NODEJS](https://nodejs.org/en/).
+* [EJS](https://ejs.co/).
+* [MONGODB](https://www.mongodb.com/).
+
  
 # For running this project
 * **Forked** from the Repo.
