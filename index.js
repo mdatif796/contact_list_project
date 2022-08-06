@@ -98,7 +98,7 @@ app.post('/create-contact', (req, res) => {
 });
 
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if(err){
         console.log(err);
         return;
