@@ -30,22 +30,7 @@ app.set('views', path.join(__dirname, 'views'));
 //     }
 // ];
 
-// sorting function
-function sorting(contactList){
-    contactList.sort(function(a, b) {
-        const nameA = a[0].name.toUpperCase(); // ignore upper and lowercase
-        const nameB = b[0].name.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-      
-        // names must be equal
-        return 0;
-      });
-}
+
 
 app.get('/', (req, res) => {
     Contact.find({}, function(err, contactList){
